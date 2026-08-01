@@ -1,8 +1,26 @@
 aid: reshop
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reshop.png
 name: Reshop
-description: 'Reshop is a company surfaced as a portfolio company of matrix-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Reshop (Reshop US, Inc.) is a fintech company that provides instant refunds
+  for e-commerce returns. When a shopper initiates a return at a partner retailer, Reshop
+  pays out the refund immediately rather than making the customer wait for the item to
+  ship back and be processed, delivering funds to the original payment method, a debit
+  card, or a bank account. Reshop partners with clothing and lifestyle brands such as
+  Volcom, RVCA, Vince Camuto, and Roxy, operates in the United States, and offers iOS
+  and Android mobile apps. The company is backed by Matrix Partners. This profile was
+  added to the API Evangelist network as a portfolio lead; Reshop publishes no public
+  developer or API surface at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/reshop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Payments
+- Refunds
+- Ecommerce
+- Returns
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/reshop-domain-security.yml
 - type: Website
   url: https://reshop.com
+- type: PrivacyPolicy
+  url: https://reshop.com/privacy-policy
+- type: TermsOfService
+  url: https://reshop.com/terms-of-service
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
